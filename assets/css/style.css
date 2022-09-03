@@ -140,6 +140,14 @@ span {
   height: 56px;
   width: 100%;
   background-color: #202020;
+  position: fixed;
+  top: 0;
+  z-index: 9999 !important;
+  width: 100%;
+}
+
+.rest {
+  margin-top: 56px;
 }
 
 .yt-icon-1::after {
@@ -165,6 +173,7 @@ span {
   height: calc(100vh - 56px);
   position: fixed;
   overflow-y: auto;
+  top: 56px;
 }
 
 .leftbar > div > p {
@@ -179,4 +188,70 @@ span {
 
 .text-input-ara::placeholder {
   color: white;
+}
+
+.categories {
+  height: 58px;
+  background-color: #212121fa;
+  border-bottom: 1px solid #ffffff1a;
+  border-top: 1px solid #ffffff1a;
+  top: 56px;
+  z-index: 99999 !important;
+  position: sticky;
+}
+
+.category {
+  background-color: #ffffff1a;
+  color: white;
+  white-space: nowrap;
+  border-radius: 16px;
+  padding: 8px 12px;
+  border: 1px solid #ffffff1a;
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.category.active {
+  background-color: white;
+  color: black;
+}
+
+.right-div {
+  margin-left: 74px;
+  width: calc(100vw - 74px);
+}
+
+.vid {
+  width: 21.5vw;
+  color: white;
+  margin-top: 30px;
+}
+
+.channel {
+  border-radius: 50%;
+  width: 36px;
+}
+
+.vid-photo {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .categories {
+    width: 100vw;
+    margin-left: 0;
+  }
+  .right-div {
+    margin-left: 0;
+    width: 100vw;
+  }
+  .vids {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .vid {
+    width: 64vw;
+  }
 }
